@@ -1,95 +1,419 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonas Kozik - Web Developer from Berlin</title>
+    <link href="css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Jonas Kozik - Web Developer from Berlin</title>
-  <link href="css/all.css" rel="stylesheet">
-  <link rel='stylesheet' href='style.css'>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css'
-    integrity='sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l' crossorigin='anonymous'>
-</head>
-
-<body class='bg-white' style='min-height: 100vh;
-position: relative;
-margin: 0 auto;
-padding-bottom: 56px;
-box-sizing: border-box;'>
-  <div class="container col-12 bg-light" style="min-height: calc(100vh - 56px);">
-    <nav class="navbar navbar-expand fixed-top navbar-light bg-light bg-white border-bottom border-grey">
-
-      <div class="container col-lg-10 col-md-10 px-0">
-        <!-- <a class="navbar-brand py-0" href="#">
+  <body
+    class="bg-white"
+    style="
+      min-height: 100vh;
+      position: relative;
+      margin: 0 auto;
+      padding-bottom: 56px;
+      box-sizing: border-box;
+    "
+  >
+    <div
+      class="container col-lg-10 col-md-12 col-sm-12 bg-white"
+      style="min-height: calc(100vh - 56px)"
+    >
+      <nav class="navbar navbar-expand fixed-top navbar-light border-grey">
+        <div class="container col-lg-9 col-md-10 px-0">
+          <!-- <a class="navbar-brand py-0" href="#">
           <img src='https://hub.packtpub.com/wp-content/uploads/2018/05/programming.jpg' alt=''
             style='max-height: 40px; width: auto; border-radius: 8px;' />
         </a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tech Stack</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fab fa-lg fa-linkedin"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fab fa-lg fa-github-square"></i></a>
-            </li>
-          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tech Stack</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fab fa-lg fa-github-square"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="far fa-lg fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container col-lg-10 col-md-10 px-0 pb-5"
+        style="padding-top: 76px"
+      >
+        <div class="row px-2 mb-3">
+          <div class="d-flex align-items-center">
+            <img src="/assets/JK_avatar.png" alt="" style="width: 150px" />
+            <div class="d-flex flex-column pl-5">
+              <p class="h1">Hi there, I'm Jonas 👋🏼</p>
+              <p class="h4">
+                a
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  style="
+                    background: #00c78b;
+                    opacity: 1;
+                    border: 0px;
+                    border-radius: 25px;
+                  "
+                  disabled
+                >
+                  web developer
+                </button>
+                from Berlin.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3 px-2">
+          <div class="accordion w-100" id="accordionExample">
+            <div class="card" style="border: none">
+              <div class="card-header p-0" id="headingOne">
+                <div
+                  class="d-flex card-wrapper align-items-center btn bg-white px-0"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                  style="border: none"
+                >
+                  <div
+                    class="panel-title btn btn-link text-decoration-none pl-0"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  ></div>
+                  <h5 class="mb-0 text-left">About me</h5>
+                </div>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  Some placeholder content for the first accordion panel. This
+                  panel is shown by default, thanks to the
+                  <code>.show</code> class.
+                </div>
+              </div>
+            </div>
+            <div class="card" style="border: none">
+              <div class="card-header p-0" id="headingOne">
+                <div
+                  class="d-flex card-wrapper align-items-center btn bg-white px-0"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                  style="border: none"
+                >
+                  <div
+                    class="panel-title btn btn-link text-decoration-none pl-0"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  ></div>
+                  <h5 class="mb-0 text-left">Projects</h5>
+                </div>
+              </div>
+
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <div
+                    class="card-wrapper d-flex justify-content-start flex-wrap"
+                  >
+                    <!-- cards start -->
+                    <div
+                      class="project-card d-flex flex-column justify-content-center align-items-center m-2"
+                      id="project1"
+                    >
+                      <p>Greenbooster</p>
+                      <div class="card-info d-flex justify-content-around">
+                        <a href="#"
+                          ><i class="fab fa-lg fa-github-square"></i
+                        ></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div
+                      class="project-card d-flex flex-column justify-content-center align-items-center m-2"
+                      id="project1"
+                    >
+                      <p>Rent my Life</p>
+                      <div class="card-info d-flex justify-content-around">
+                        <a href="#"
+                          ><i class="fab fa-lg fa-github-square"></i
+                        ></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div
+                      class="project-card d-flex flex-column justify-content-center align-items-center m-2"
+                      id="project1"
+                    >
+                      <p>Bootstrap Site Generator</p>
+                      <div class="card-info d-flex justify-content-around">
+                        <a href="#"
+                          ><i class="fab fa-lg fa-github-square"></i
+                        ></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div
+                      class="project-card d-flex flex-column justify-content-center align-items-center m-2"
+                      id="project1"
+                    >
+                      <p>Portfolio (this site)</p>
+                      <div class="card-info d-flex justify-content-around">
+                        <a href="#"
+                          ><i class="fab fa-lg fa-github-square"></i
+                        ></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                      </div>
+                    </div>
+                    <!-- cards end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="border: none">
+              <div class="card-header p-0" id="headingOne">
+                <div
+                  class="d-flex card-wrapper align-items-center btn bg-white px-0"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                  style="border: none"
+                >
+                  <div
+                    class="panel-title btn btn-link text-decoration-none pl-0"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  ></div>
+                  <h5 class="mb-0 text-left">Tech Stack</h5>
+                </div>
+              </div>
+
+              <div
+                id="collapseThree"
+                class="show"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body d-flex flex-column">
+                  <!-- tech stack start  -->
+
+                  <!-- FRONTEND START  -->
+                  <div class="techstack-wrapper d-flex flex-column">
+                    <div class="tech-title">
+                      <h5>Frontend</h5>
+                    </div>
+                    <div class="tech-icons d-flex flex-wrap">
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">HTML</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">CSS</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Bootstrap</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">JavaScript</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FRONTEND END  -->
+
+                  <!-- BACKEND START  -->
+                  <div class="techstack-wrapper d-flex flex-column">
+                    <div class="tech-title">
+                      <h5>Backend</h5>
+                    </div>
+                    <div class="tech-icons d-flex flex-wrap">
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Ruby</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Ruby on Rails</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">PostgreSQL</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- BACKEND END  -->
+
+                  <!-- TOOLS/PLATFORMS START  -->
+                  <div class="techstack-wrapper d-flex flex-column">
+                    <div class="tech-title">
+                      <h5>Tools & Platforms</h5>
+                    </div>
+                    <div class="tech-icons d-flex flex-wrap">
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Git</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">GitHub</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Heroku</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Google Cloud</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Mapbox</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Figma</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- TOOLS/PLATFORMS END  -->
+
+                  <!-- CURRENTLY LEARNING START  -->
+                  <div class="techstack-wrapper d-flex flex-column">
+                    <div class="tech-title">
+                      <h5>Currently learning</h5>
+                    </div>
+                    <div class="tech-icons d-flex flex-wrap">
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Python</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">NodeJS</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">Elasticsearch</div>
+                      </div>
+                      <div class="tech-card">
+                        <div class="tech-image">
+                          <img src="/assets/tech-logos/Ruby_logo.png" />
+                        </div>
+                        <div class="tech-name">MongoDB</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CURRENTLY LEARNING END  -->
+
+                  <!-- tech stack end  -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <div class="container col-lg-10 col-md-10 px-0 pb-5" style="padding-top: 76px">
-
-
-      <h2>About me</h2>
-
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis quam in voluptas aperiam tempora? Minima
-      necessitatibus iure aliquam optio reiciendis placeat? Fuga quas ab exercitationem earum natus laborum deleniti.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis quam in voluptas aperiam tempora? Minima
-      necessitatibus iure aliquam optio reiciendis placeat? Fuga quas ab exercitationem earum natus laborum deleniti.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis quam in voluptas aperiam tempora? Minima
-      necessitatibus iure aliquam optio reiciendis placeat? Fuga quas ab exercitationem earum natus laborum deleniti.
-
-      <p>
-
-      <h2>Projects</h2>
-
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis quam in voluptas aperiam tempora? Minima
-      necessitatibus iure aliquam optio reiciendis placeat? Fuga quas ab exercitationem earum natus laborum deleniti.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis quam in voluptas aperiam tempora? Minima
-      necessitatibus iure aliquam optio reiciendis placeat? Fuga quas ab exercitationem earum natus laborum deleniti.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis quam in voluptas aperiam tempora? Minima
-      necessitatibus iure aliquam optio reiciendis placeat? Fuga quas ab exercitationem earum natus laborum deleniti.
-      </p>
-      <p>
-        <h2>Tech Stack</h2>
-        <h4>Frontend</h4>
-        <h4>Backend</h4>
-        <h4>Tools & Platforms</h4>
-        <h4>Currently learning</h4>
-      </p>
     </div>
-  </div>
-  <div class='row mx-0 text-muted justify-content-center align-items-center w-100 bg-white'
-    style='position: absolute; bottom: 0; height: 56px'>
-    Jonas Kozik ©
-    2021
-  </div>
+    <div
+      class="row mx-0 text-muted justify-content-center align-items-center w-100 bg-white"
+      style="position: absolute; bottom: 0; height: 56px"
+    >
+      Contact me on<i class="fab fa-lg fa-linkedin px-2"></i> | Download my CV
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,106 @@
+.navbar {
+  padding: 0.2rem 1rem !important;
+}
+
+.panel-title::after {
+  color: rgb(136, 136, 136);
+
+  font-size: 1.5em;
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f138";
+  border: 0px !important;
+}
+
+.panel-title[aria-expanded="true"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f13a";
+  border: 0px !important;
+}
+
+.card-header {
+  border-radius: 0px !important;
+}
+
+.card {
+  border: none;
+  background: #00c78b !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.card-wrapper {
+  border-radius: 0px !important;
+}
+
+.card-body {
+  color: white;
+}
+
+.navbar {
+  background-color: #00c78b;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* teal merken */
+
+.project-card {
+  background: rgb(102, 102, 102);
+  width: 175px;
+  height: 175px;
+  border-radius: 8px;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-info {
+  width: 40%;
+}
+.card-info i {
+  color: white;
+}
+
+.tech-image img {
+  width: 35px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  color: lightslategray;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 25px grey;
+  margin: 0.5rem;
+}
+
+.tech-icons {
+  display: flex;
+}
+
+.tech-title h5 {
+  margin-left: 0.5rem;
+  margin-bottom: 0px;
+}
+
+.tech-name {
+  font-size: 10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.techstack-wrapper {
+  margin-bottom: 1rem;
+}

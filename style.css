@@ -50,22 +50,24 @@
 /* teal merken */
 
 .project-card {
-  background: rgb(102, 102, 102);
-  width: 175px;
-  height: 175px;
+  background: rgb(255, 255, 255);
+  width: 125px;
+  height: 125px;
   border-radius: 8px;
+  box-shadow: 2px 2px 25px grey;
 }
 
 .project-card p {
   margin-bottom: 10px;
   text-align: center;
+  color: black;
 }
 
 .card-info {
   width: 40%;
 }
 .card-info i {
-  color: white;
+  color: black;
 }
 
 .tech-image img {

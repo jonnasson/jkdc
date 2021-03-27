@@ -71,11 +71,15 @@
         class="container col-lg-10 col-md-10 px-0 pb-5"
         style="padding-top: 76px"
       >
-        <div class="row px-2 mb-3">
+        <div class="row px-2 mb-3 d-none d-sm-block">
           <div class="d-flex align-items-center">
-            <img src="/assets/JK_avatar.png" alt="" style="width: 150px" />
-            <div class="d-flex flex-column pl-5">
-              <p class="h1">Hi there, I'm Jonas 👋🏼</p>
+            <img
+              src="/assets/JK_avatar.png"
+              alt=""
+              style="width: 135px; padding-right: 10px"
+            />
+            <div class="d-flex flex-column pl-2">
+              <p class="h2">Hi there, I'm Jonas 👋🏼</p>
               <p class="h4">
                 a
                 <button
@@ -97,6 +101,37 @@
           </div>
         </div>
 
+        <!-- hero when mobile start -->
+
+        <div class="row px-2 mb-3 d-sm-none">
+          <div
+            class="d-flex w-100 flex-column align-items-center justify-content-center"
+          >
+            <p class="h2">Hi there, I'm Jonas 👋🏼</p>
+            <p class="mb-2">
+              <img src="/assets/JK_avatar.png" alt="" style="width: 135px" />
+            </p>
+            <p class="h4">
+              a
+              <button
+                type="button"
+                class="btn btn-success"
+                style="
+                  background: #00c78b;
+                  opacity: 1;
+                  border: 0px;
+                  border-radius: 25px;
+                "
+                disabled
+              >
+                web developer
+              </button>
+              from Berlin.
+            </p>
+          </div>
+        </div>
+
+        <!-- hero when mobile end   -->
         <div class="row mb-3 px-2">
           <div class="accordion w-100" id="accordionExample">
             <div class="card" style="border: none">
